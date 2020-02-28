@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loan Calculator</title>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            />
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <button id="change">Colors</button>
+        <div id="loan-container">
+            <div id="error">Please complete the inputs!</div>
+            <h1 class="loan">Loan Calculator</h1>
+            <form>
+                <span class="symbol" id="principal">$</span>
+                <input type="number" class="inputx" id="loan-amount"
+                    placeholder="Loan Amount"
+                    required><br />
+                <span class="symbol" id="rate">%</span>
+                <input type="number" class="inputx" id="interest-rate"
+                    placeholder="Interest
+                    Rate"
+                    required><br
+                    />
+                <input type="number" class="input" id="payment-year"
+                    placeholder="Years To
+                    Pay"
+                    required><br />
+                <button class="input-button" id="button">Calculate</button><br
+                    />
+            </form>
+            <div id="loader">
+                <img class="loading" src="tenor.gif" alt="loader">
+            </div>
+            <div class="result-container">
+                <h2 class="result">Result</h2>
+                <span id="monthly-pay">Monthly Payment</span>
+                <input type="number" id="monthly-payment" disabled><br />
+                <span id="total-amount">Total Payment</span>
+                <input type="number" id="total-payment" disabled><br />
+                <span id="interest">Total Interest</span>
+                <input type="number" id="total-gain" disabled>
+            </div>
+        </div>
+        <div class="links">
+            <a href="https://github.com/sammysmart95"><i class="fa fa-github"
+                    aria-hidden="true"></i></a>
+            <a
+                href="https://www.linkedin.com/in/samuel-smart-adeoye-2a379a163/"><i
+                    class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a
+                href="https://media.tenor.com/images/ac5293f091d948353f49a8151d267e39/tenor.gif">one
+                <i class="fa fa-heart" aria-hidden="true"></i></a>
+        </div>
+        <script src="loan.js"></script>
+    </body>
+</html>
